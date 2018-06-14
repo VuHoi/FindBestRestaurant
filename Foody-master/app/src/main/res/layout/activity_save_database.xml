@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_toolbar_details"
+    android:layout_height="match_parent"
+    tools:context="com.example.vukhachoi.demo_foody.browser_restaurant">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_savelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_toolbar_details"
+
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_savelist"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/cast_expanded_controller_control_toolbar_min_height"
+            android:background="@drawable/custom_toolbar_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="Favorite Restaurant List"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tool_fav1_savelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+            </android.support.v7.widget.Toolbar>
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:id="@+id/listview_savelist"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
