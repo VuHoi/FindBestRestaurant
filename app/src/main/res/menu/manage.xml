@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Insert"
+        app:showAsAction="collapseActionView"
+        android:id="@+id/itInsert"
+        ></item>
+    <item
+        android:title="Delete"
+        app:showAsAction="collapseActionView"
+        android:id="@+id/itDelete"
+       ></item>
+    <item
+        android:title="Update"
+        app:showAsAction="collapseActionView"
+        android:id="@+id/itUpdate"
+         ></item>
+</menu>

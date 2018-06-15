@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:id="@+id/cardLayout_search"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view_search"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="8dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/country_photo_search"
+            android:layout_width="88dp"
+            android:layout_height="86dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:id="@+id/txtTitle_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center|bottom"
+            android:background="#96000000"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtnameRestaurent_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fancy restaurent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgInfor_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnameRestaurent_search"
+                android:src="@android:drawable/ic_menu_info_details" />
+
+            <TextView
+                android:id="@+id/txtstype_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnameRestaurent_search"
+                android:layout_toRightOf="@+id/imgInfor_search"
+                android:text="Drink|Food" />
+
+            <ImageView
+                android:id="@+id/imglocation_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnameRestaurent_search"
+                android:layout_toRightOf="@+id/txtstype_search"
+                android:paddingLeft="10dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/txtlocation_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnameRestaurent_search"
+                android:layout_toRightOf="@+id/imglocation_search"
+                android:text="222 le van si" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/explore_white" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
