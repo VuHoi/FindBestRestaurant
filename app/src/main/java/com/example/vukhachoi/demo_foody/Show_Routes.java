@@ -129,7 +129,7 @@ public class Show_Routes extends AppCompatActivity implements OnMapReadyCallback
                     contentValues.put("Longti", longti+"");
 
                     database.insert("Restaurant",null, contentValues);
-                    Toast.makeText(Show_Routes.this,"Successfully added!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Show_Routes.this,"Add Successful!",Toast.LENGTH_SHORT).show();
                 }
 
                 return true;
@@ -234,20 +234,6 @@ public class Show_Routes extends AppCompatActivity implements OnMapReadyCallback
             Toast.makeText(this, "Address: " + address, Toast.LENGTH_SHORT).show();
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
