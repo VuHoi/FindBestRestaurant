@@ -189,7 +189,7 @@ public class Restaurant_Details extends AppCompatActivity implements OnMapReadyC
                     contentValues.put("Longti", latLng.longitude+"");
 
                     database.insert("Restaurant",null, contentValues);
-                    Toast.makeText(Restaurant_Details.this,"Successfully added!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Restaurant_Details.this,"Add Successful!",Toast.LENGTH_SHORT).show();
                 }
 
 
