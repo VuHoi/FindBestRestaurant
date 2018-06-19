@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtlocation1"
+  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:textColor="#000"
+        android:text="location"
+        android:textSize="18dp"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Address"
+        android:textSize="15dp"
+      />
+
+
+
+    <ImageView
+        android:id="@+id/photo_ref"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cast_abc_scrubber_control_to_pressed_mtrl_000" />
+
+
+</LinearLayout>

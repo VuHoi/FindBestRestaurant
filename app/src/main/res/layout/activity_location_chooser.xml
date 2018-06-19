@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/img"
+        android:src="@drawable/logo"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/containers"
+        android:layout_below="@id/img"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="#938e8e"
+            android:text="Choose Your "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:text=" LOCATION "/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/containers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/txtcity"
+        android:textColor="#938e8e"
+        android:textSize="18dp"
+        android:text="Address"/>
+
+    <EditText
+        android:id="@+id/edtcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcity"
+        android:background="@drawable/edt_custom"
+
+        android:layout_marginLeft="10sp"
+        android:hint="Moskva"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="#292727"
+        android:textColorHint="@color/colorPrimary" />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_below="@id/edtcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#938e8e"
+        android:id="@+id/txtyoudress"
+        android:textSize="18dp"
+        android:text="Restaurant"/>
+
+    <Spinner
+        android:id="@+id/spinnerNameResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtyoudress"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:id="@+id/btnChooseRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/user"
+        android:text="CHOOSE lOCATION"
+        android:textColor="#292727"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/background_show_restaurant"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Show Restaurant Map" />
+
+</RelativeLayout>
